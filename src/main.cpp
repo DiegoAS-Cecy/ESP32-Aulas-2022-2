@@ -1,9 +1,15 @@
 #include <Arduino.h>
 
+//GPIO pins
+const int GPIO_LED = 23;
+
 void setup() {
-  // put your setup code here, to run once:
+  pinMode(GPIO_LED, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  digitalWrite(GPIO_LED, HIGH);
+  delay(500);
+  digitalWrite(GPIO_LED, LOW);
+  delay(500);
 }
